@@ -2,6 +2,7 @@
 import { FaTruckMoving } from 'react-icons/fa'
 import { AiOutlineHeart, AiOutlineUser } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'
+import { CiLogin, CiLogout } from 'react-icons/ci'
 import { Link } from 'react-router-dom';
 import './nav.css';
 
@@ -27,19 +28,45 @@ const Nav = () => {
                         <div className='account'>
                             <div className='user-icon'>
                                 <AiOutlineUser />
-                                
+
                             </div>
                             <p>Hello, User</p>
-                            </div>
-                            <div className='second-icon'>
-                          <Link to='/'className='link'> <p><AiOutlineHeart /></p></Link> 
-                          <Link to='/cart'className='link'> <p> <BsBagCheck /> </p> </Link> 
-                          
+                        </div>
+                        <div className='second-icon'>
+                            <Link to='/' className='link'> <p><AiOutlineHeart /></p></Link>
+                            <Link to='/cart' className='link'> <p> <BsBagCheck /> </p> </Link>
+
                         </div>
                     </div>
 
                 </div>
 
+            </div>
+            <div className='header'>
+                <div className='container'>
+                    <div className='nav'>
+                        <ul>
+                            <li>
+                                <Link to='/' className='link'>Home</Link>
+                            </li>
+                            <li>
+                                <Link to='/product' className='link'>Product</Link>
+                            </li>
+                            <li>
+                                <Link to='/about' className='link'>About</Link>
+                            </li>
+                            <li>
+                                <Link to='/contact' className='link'>Contact</Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className='auth'>
+                        <CiLogin />
+                        <CiLogout />
+
+                    </div>
+                </div>
             </div>
 
         </>
