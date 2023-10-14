@@ -62,8 +62,8 @@ const Nav = () => {
                     </div>
 
                     <div className='auth'>
-                        <CiLogin />
-                        <CiLogout />
+                        <button><CiLogin /></button>
+                       <button><CiLogout /></button>
 
                     </div>
                 </div>
