@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-.nav{
+.free{
     width:100%;
     padding:20px 30px;
     background-color: #010f01;
     display:flex;
-    align-items:center;
+
     
 
 }
@@ -17,8 +17,10 @@
     color:yellow;
     font-size:32px;
 }
-.nav p{
-    font-size:20px;
-    color:#fff;
+.free p{
+    font-size:14px;
+    color:#f6f7f9;
     padding-left:10px;
+    font-weight:600;
+    padding-top:8px;
 }
