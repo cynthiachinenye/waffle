@@ -7,13 +7,11 @@
 .free{
     width:100%;
     padding:20px 30px;
-    background-color: #010f01;
-    display:flex;
-
-    
-
+    background-color: #010f1c;
+    display:flex; 
 }
-.icon{
+
+.free .icon{
     color:yellow;
     font-size:32px;
 }
@@ -23,4 +21,19 @@
     padding-left:10px;
     font-weight:600;
     padding-top:8px;
+}
+.main-header{
+    padding:30px 40px;
+    width:100%;
+    border-bottom:1px solid #010f1c;
+}
+.main-header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width:180px;
+}
+.main-header .container .search-box{
+    margin-right: 30px;
 }
