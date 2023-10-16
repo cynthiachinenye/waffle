@@ -12,6 +12,9 @@ const Home = () => {
       <Link to='/product'>Shop Now<BsArrowRightShort/></Link>
     
       </div>
+      <div className='img-box'>
+      <img src='./images/ipad.png' alt='slider'/>
+      </div>
       </div>
       </div>
     </div>
