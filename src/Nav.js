@@ -4,9 +4,12 @@ import { AiOutlineHeart, AiOutlineUser } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'
 import { CiLogin, CiLogout } from 'react-icons/ci'
 import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
+
 import './nav.css';
 
 const Nav = () => {
+    const {loginwithRedirect} = useAuth0()
     return (
         <>
             <div className='free'>
@@ -62,8 +65,8 @@ const Nav = () => {
                     </div>
 
                     <div className='auth'>
-                        <button><CiLogin /></button>
-                       <button><CiLogout /></button>
+                        <button onClick={loginwithRedirect()}><CiLogin /></button>
+                       <button onClick={loginwithRedirect()}><CiLogout /></button>
 
                     </div>
                 </div>
