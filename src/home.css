@@ -15,3 +15,26 @@
     display: flex;
     justify-content:space-between
 }
+.top-banner .container .detail{
+    margin-top:8%;
+    margin-left:30px;
+}
+.top-banner .container .detail h2{
+    font-size:50px;
+    color:#010f1c;
+    margin-right:50%;
+    margin-bottom:40px;
+}
+.top-banner .container .detail .link{
+  
+    padding:10px 20px;
+    text-decoration: none;
+    border-radius:5px;
+    color:#010f1c;
+    background:#fff;
+    transition: .5s;
+}
+.top-banner .container .detail .link:hover{
+    background: #0989ff;
+    color:#fff;
+}
