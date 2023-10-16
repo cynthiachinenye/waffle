@@ -6,5 +6,12 @@
 }
 .top-banner{
     padding:30px 40px;
-    
+    width:100%;
+    background: #e3edf6;
+
+}
+.top-banner .container{
+    max-width: 100%;
+    display: flex;
+    justify-content:space-between
 }

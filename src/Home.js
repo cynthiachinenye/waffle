@@ -1,6 +1,7 @@
 import React from 'react'
 import {  Link } from 'react-router-dom'
 import{BsArrowRightShort} from 'react-icons/bs'
+import './home.css'
 const Home = () => {
   return (
     <div>
@@ -9,7 +10,7 @@ const Home = () => {
       <div className='detail'>
       <h2>The Best Note Book Collection 2023</h2>
     
-      <Link to='/product'>Shop Now<BsArrowRightShort/></Link>
+      <Link to='/product'> Shop Now <BsArrowRightShort/></Link>
     
       </div>
       <div className='img-box'>
