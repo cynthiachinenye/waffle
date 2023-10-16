@@ -28,6 +28,52 @@ const Home = () => {
               <p>23 products</p>
             </div>
           </div>
+
+          <div className='box'>
+            <div className='img-box'>
+              <img src='./images/phone (1).png' alt='mobile' />
+            </div>
+            <div className='detail'>
+              <p>18 products</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img-box'>
+              <img src='./images/phone (3).png' alt='mobile' />
+            </div>
+            <div className='detail'>
+              <p>20 products</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img-box'>
+              <img src='./images/phone (2).png' alt='mobile' />
+            </div>
+            <div className='detail'>
+              <p>13 products</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img-box'>
+              <img src='./images/headset.jpeg' alt='mobile' />
+            </div>
+            <div className='detail'>
+              <p>21 products</p>
+            </div>
+          </div>
+
+          <div className='box'>
+          <div className='img-box'>
+            <img src='./images/watch.jpeg' alt='watch' />
+          </div>
+          <div className='detail'>
+            <p>15 products</p>
+          </div>
+        </div>
+
         </div>
       </div>
     </div>
