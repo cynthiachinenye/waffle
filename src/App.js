@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import { BrowserRouter } from "react-router-dom";
+import Rout from "./Rout";
 
 
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
      <BrowserRouter>
      <Nav/>
+     <Rout/>
      </BrowserRouter>
     </div>
   );

@@ -4,12 +4,12 @@ import { AiOutlineHeart, AiOutlineUser } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'
 import { CiLogin, CiLogout } from 'react-icons/ci'
 import { Link } from 'react-router-dom';
-import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0 } from "@auth0/auth0-react";
 
 import './nav.css';
 
 const Nav = () => {
-    const {loginwithRedirect} = useAuth0()
+    const { loginWithRedirect, logout, user, isAuthenticated, } = useAuth0()
     return (
         <>
             <div className='free'>
@@ -28,13 +28,19 @@ const Nav = () => {
                         <button>Search</button>
                     </div>
                     <div className='icon'>
-                        <div className='account'>
-                            <div className='user-icon'>
-                                <AiOutlineUser />
+                        {
+                            isAuthenticated &&
+                            (
+                                <div className='account'>
+                                    <div className='user-icon'>
+                                        <AiOutlineUser />
 
-                            </div>
-                            <p>Hello, User</p>
-                        </div>
+                                    </div>
+                                    <p>Hello,{user.name}</p>
+                                </div>
+
+                            )
+                        }
                         <div className='second-icon'>
                             <Link to='/' className='link'> <p><AiOutlineHeart /></p></Link>
                             <Link to='/cart' className='link'> <p> <BsBagCheck /> </p> </Link>
@@ -65,8 +71,13 @@ const Nav = () => {
                     </div>
 
                     <div className='auth'>
-                        <button onClick={loginwithRedirect()}><CiLogin /></button>
-                       <button onClick={loginwithRedirect()}><CiLogout /></button>
+                        {
+                            isAuthenticated ?
+                                <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><CiLogout /></button>
+                                :
+                                <button onClick={() => loginWithRedirect()}><CiLogin /></button>
+
+                        }
 
                     </div>
                 </div>
