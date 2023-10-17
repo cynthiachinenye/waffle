@@ -58,7 +58,7 @@ const Home = () => {
 
           <div className='box'>
             <div className='img-box'>
-              <img src='./images/headset.jpeg' alt='mobile' />
+              <img src='./images/headset.png' alt='mobile' />
             </div>
             <div className='detail'>
               <p>21 products</p>
@@ -67,7 +67,7 @@ const Home = () => {
 
           <div className='box'>
           <div className='img-box'>
-            <img src='./images/watch.jpeg' alt='watch' />
+            <img src='./images/watch.png' alt='watch' />
           </div>
           <div className='detail'>
             <p>15 products</p>
