@@ -8,6 +8,7 @@
     padding:30px 40px;
     width:100%;
     background: #e3edf6;
+    overflow: hidden;
 
 }
 .top-banner .container{
@@ -60,9 +61,16 @@
     overflow:hidden;
 }
 .product-type .container .box .img-box img{
-    height:150px;
-    width:150px;
+    height:80px;
+    width:80px;
     align-items:center;
+    justify-content: center;
     max-width:100%;
+    margin-top:10px;
+    margin-left:20px;
+    transition:.5s;
 
+}
+.product-type .container .box .img-box:hover img{
+    transform: scale(1.5);
 }
