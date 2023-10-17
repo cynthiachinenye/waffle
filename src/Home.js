@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { BsArrowRightShort } from 'react-icons/bs'
+import { BsArrowRightShort, BsCurrencyDollar } from 'react-icons/bs'
+import { FiTruck } from "react-icons/fi";
+import {HiOutlineReceiptPercent}from  'react-icons/hi'
+ import {BiHeadphone} from  'react-icons/bi'
 import './home.css'
 const Home = () => {
   return (
@@ -14,7 +17,7 @@ const Home = () => {
 
           </div>
           <div className='img-box'>
-            <img src='./images/ipad.png' alt='slider' />
+            <img src='./images/tablet.png' alt='slider' />
           </div>
         </div>
       </div>
@@ -22,7 +25,7 @@ const Home = () => {
         <div className='container'>
           <div className='box'>
             <div className='img-box'>
-              <img src='./images/mobile.png' alt='mobile' />
+              <img src='./images/set (1).png' alt='mobile' />
             </div>
             <div className='detail'>
               <p>23 products</p>
@@ -31,7 +34,7 @@ const Home = () => {
 
           <div className='box'>
             <div className='img-box'>
-              <img src='./images/phone (1).png' alt='mobile' />
+              <img src='./images/set (2).png' alt='mobile' />
             </div>
             <div className='detail'>
               <p>18 products</p>
@@ -40,7 +43,7 @@ const Home = () => {
 
           <div className='box'>
             <div className='img-box'>
-              <img src='./images/phone (3).png' alt='mobile' />
+              <img src='./images/set (3).png' alt='mobile' />
             </div>
             <div className='detail'>
               <p>20 products</p>
@@ -49,7 +52,7 @@ const Home = () => {
 
           <div className='box'>
             <div className='img-box'>
-              <img src='./images/phone (2).png' alt='mobile' />
+              <img src='./images/set (4).png' alt='mobile' />
             </div>
             <div className='detail'>
               <p>13 products</p>
@@ -58,7 +61,7 @@ const Home = () => {
 
           <div className='box'>
             <div className='img-box'>
-              <img src='./images/headset.png' alt='mobile' />
+              <img src='./images/set (5).png' alt='mobile' />
             </div>
             <div className='detail'>
               <p>21 products</p>
@@ -66,14 +69,74 @@ const Home = () => {
           </div>
 
           <div className='box'>
-          <div className='img-box'>
-            <img src='./images/watch.png' alt='watch' />
+            <div className='img-box'>
+              <img src='./images/set (6).png' alt='watch' />
+            </div>
+            <div className='detail'>
+              <p>15 products</p>
+            </div>
           </div>
-          <div className='detail'>
-            <p>15 products</p>
+
+
+          <div className='box'>
+            <div className='img-box'>
+              <img src='./images/set (7).png' alt='watch' />
+            </div>
+            <div className='detail'>
+              <p>15 products</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='img-box'>
+              <img src='./images/set (8).png' alt='watch' />
+            </div>
+            <div className='detail'>
+              <p>15 products</p>
+            </div>
           </div>
         </div>
+      </div>
+      <div className='about'>
+        <div className='container'>
+          <div className='box'>
+            <div className='icon'>
+              <FiTruck />
+            </div>
+            <div className='detail'>
+              <h3>Free Shopping</h3>
+              <p>Order above $1000</p>
+            </div>
+          </div>
 
+          <div className='box'>
+            <div className='icon'>
+              <HiOutlineReceiptPercent />
+            </div>
+            <div className='detail'>
+              <h3>Return & Refund</h3>
+              <p>Money Back Gaurenty</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='icon'>
+              <BsCurrencyDollar/>
+            </div>
+            <div className='detail'>
+              <h3>Free Shopping</h3>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='icon'>
+              <BiHeadphone />
+            </div>
+            <div className='detail'>
+              <h3>Free Shopping</h3>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>

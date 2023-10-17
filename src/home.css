@@ -61,16 +61,27 @@
     overflow:hidden;
 }
 .product-type .container .box .img-box img{
-    height:80px;
-    width:80px;
+    height:100px;
+    width:100px;
     align-items:center;
     justify-content: center;
     max-width:100%;
-    margin-top:10px;
-    margin-left:20px;
+    margin-top:40px;
+    margin-left:45px;
     transition:.5s;
 
 }
 .product-type .container .box .img-box:hover img{
     transform: scale(1.5);
+}
+.product-type .container .detail{
+    max-width:100%;
+    text-align: center;
+    align-items: center;
+ 
+}
+.product-type .container .detail p{
+    margin-top: 10px;
+    color: #9a9a9a;
+  
 }
