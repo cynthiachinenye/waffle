@@ -1,11 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { BsArrowRightShort, BsCurrencyDollar } from 'react-icons/bs'
+
+import { BsArrowRightShort, BsCurrencyDollar, BsEye } from 'react-icons/bs'
 import { FiTruck } from "react-icons/fi";
-import {CiPercent} from "react-icons/ci"
- import {BiHeadphone} from  'react-icons/bi'
+import { CiPercent } from "react-icons/ci"
+import { BiHeadphone } from 'react-icons/bi'
+import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai'
+import HomeProduct from './HomeProduct';
+
 import './home.css'
+
 const Home = () => {
+  // const [homeProduct, setHomeProduct] = useState(HomeProduct)
   return (
     <div>
       <div className='top-banner'>
@@ -59,42 +65,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='box'>
-            <div className='img-box'>
-              <img src='./images/set (5).png' alt='mobile' />
-            </div>
-            <div className='detail'>
-              <p>21 products</p>
-            </div>
-          </div>
-
-          <div className='box'>
-            <div className='img-box'>
-              <img src='./images/set (6).png' alt='watch' />
-            </div>
-            <div className='detail'>
-              <p>15 products</p>
-            </div>
-          </div>
 
 
-          <div className='box'>
-            <div className='img-box'>
-              <img src='./images/set (7).png' alt='watch' />
-            </div>
-            <div className='detail'>
-              <p>15 products</p>
-            </div>
-          </div>
-
-          <div className='box'>
-            <div className='img-box'>
-              <img src='./images/set (8).png' alt='watch' />
-            </div>
-            <div className='detail'>
-              <p>15 products</p>
-            </div>
-          </div>
         </div>
       </div>
       <div className='about'>
@@ -111,7 +83,7 @@ const Home = () => {
 
           <div className='box'>
             <div className='icon'>
-              <CiPercent/>
+              <CiPercent />
             </div>
             <div className='detail'>
               <h3>Member Discount</h3>
@@ -121,7 +93,7 @@ const Home = () => {
 
           <div className='box'>
             <div className='icon'>
-              <BsCurrencyDollar/>
+              <BsCurrencyDollar />
             </div>
             <div className='detail'>
               <h3>Return & Refund</h3>
@@ -138,14 +110,46 @@ const Home = () => {
               <p>Every Time Call Support </p>
             </div>
           </div>
-          
+
         </div>
+
       </div>
+
       <div className='product'>
-      <div className='contanier'>
-      <div className='box'>
-      </div>
-      </div>
+      <h2>Top Products</h2>
+        <div className='contanier'>
+          {
+            HomeProduct.map((product) => {
+              return (
+                <>
+                  <div className='box' key={product.id}>
+                    <div className='img-box'>
+                      <img src={product.Img} alt={product.Title} />
+                      <div className='icon'>
+                      <li> <AiOutlineShoppingCart /></li>
+                      <li>  <BsEye /></li>
+                      <li> <AiOutlineHeart /></li>
+                       
+                       
+                       
+
+                      </div>
+                    </div>
+
+                    <div className='detail'>
+
+                      <p>{product.Cat}</p>
+                      <h3>{product.Title}</h3>
+                      <h4>{product.Price}</h4>
+                    </div>
+
+                  </div>
+                </>
+              )
+            })
+          }
+
+        </div>
       </div>
     </div>
   )
