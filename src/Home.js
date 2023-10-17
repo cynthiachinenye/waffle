@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsArrowRightShort, BsCurrencyDollar } from 'react-icons/bs'
 import { FiTruck } from "react-icons/fi";
-import {HiOutlineReceiptPercent}from  'react-icons/hi'
+import {CiPercent} from "react-icons/ci"
  import {BiHeadphone} from  'react-icons/bi'
 import './home.css'
 const Home = () => {
@@ -111,7 +111,17 @@ const Home = () => {
 
           <div className='box'>
             <div className='icon'>
-              <HiOutlineReceiptPercent />
+              <CiPercent/>
+            </div>
+            <div className='detail'>
+              <h3>Member Discount</h3>
+              <p>On every Order</p>
+            </div>
+          </div>
+
+          <div className='box'>
+            <div className='icon'>
+              <BsCurrencyDollar/>
             </div>
             <div className='detail'>
               <h3>Return & Refund</h3>
@@ -121,19 +131,11 @@ const Home = () => {
 
           <div className='box'>
             <div className='icon'>
-              <BsCurrencyDollar/>
-            </div>
-            <div className='detail'>
-              <h3>Free Shopping</h3>
-            </div>
-          </div>
-
-          <div className='box'>
-            <div className='icon'>
               <BiHeadphone />
             </div>
             <div className='detail'>
-              <h3>Free Shopping</h3>
+              <h3>Customer Support</h3>
+              <p>Every Time Call Support </p>
             </div>
           </div>
           
