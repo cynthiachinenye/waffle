@@ -188,3 +188,19 @@
     background:#0989ff;
     color:#fff;
 }
+.product .contanier .box .detail{
+    margin-top:10px;
+}
+.product .contanier .box .detail p{
+    color:#9a9a9a;
+    font-size:14px;
+}
+.product .contanier .box .detail h3{
+    font-size:15px;
+    margin-top:5px;
+    color:#010f1c;
+    transition:.5s;
+}
+.product .contanier .box:hover .detail h3{
+    color:#0989ff;
+}
