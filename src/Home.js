@@ -141,6 +141,12 @@ const Home = () => {
           
         </div>
       </div>
+      <div className='product'>
+      <div className='contanier'>
+      <div className='box'>
+      </div>
+      </div>
+      </div>
     </div>
   )
 }
