@@ -54,7 +54,7 @@ const ProductDetail = [
          Title:"Mini Digital Camera Cctv Wireless Small Camera For Security",
          Cat:'Camera',
          Price:'$723',
-         Img:'./images/gaming (5).png'
+         Img:'./images/gaming (5).jpg'
       },
  
       {
@@ -62,7 +62,7 @@ const ProductDetail = [
          Title:"1.3 Mega Pixel HD DV SLR Camera, 2.4 Inch LCD, Full HD 720P Recording, EISInfinix Smart 7 HD 6.6 2GB RAM/64GB ROM 4G Android 12 - White ",
          Cat:'Camera',
          Price:'$623',
-         Img:'./images/gaming (6).png'
+         Img:'./images/gaming (6).jpg'
       },
  
 
