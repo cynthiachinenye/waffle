@@ -105,3 +105,26 @@
     background:#0989ff;
     color:#fff;
 }
+.products .container .product-box .contain .box .detail{
+    margin-top:10px;
+}
+.products .container .product-box .contain .box .detail p{
+    color:#9a9a9a;
+    font-size:14px;
+}
+.products .container .product-box .contain .box .detail h3{
+    font-size:15px;
+    margin-top:5px;
+    color:#010f1c;
+    transition:.5s;
+}
+.products .container .product-box .contain .box:hover .detail h3{
+    color:#0989ff;
+}
+.products .container .product-box .contain .box .detail h4{
+    color:#0989ff;
+    margin-top:5px;
+    font-size:14px;
+    letter-spacing: 1px;
+}
+
