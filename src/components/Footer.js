@@ -35,6 +35,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className='page'>
+                    <h3>Pages</h3>
                        <ul>
                         <li>Home</li>
                         <li>About</li>
