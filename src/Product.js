@@ -2,13 +2,15 @@ import React from 'react'
 import ProductDetail from './components/ProductDetail'
 import { BsEye } from 'react-icons/bs'
 import {AiOutlineShoppingCart,AiOutlineHeart} from 'react-icons/ai'
+import './components/product.css'
 
 const Product = () => {
     return (
         <div>
-            <h3> # Products</h3>
-            <p>Home . products</p>
+            
             <div className='products'>
+            <h2> # Products</h2>
+            <p>Home . products</p>
                 <div className='container'>
                     <div className='filter'>
                         <div className='categories'>
@@ -23,7 +25,7 @@ const Product = () => {
                         </div>
                     </div>
                     <div className='product-box'>
-                        <div className='container'>
+                        <div className='contain'>
                             {
                                 ProductDetail.map((product) => {
                                     return (

@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.products{
+    width:100%;
+    padding:30px 40px;
+}
+.products h2{
+    font-size:42px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight:300;
+    color:#010f1c;
+}
+.products p{
+     margin-top:10px;
+     color:#9a9a9a;
+
+}
+.products .container{
+    margin-top:20px;
+    display:flex;
+    max-width:100%;
+    justify-content:space-between;
+   
+}
+
+.products .container .filter{
+    padding:20px 30px;
+}
+.products .container .filter .categories h3{
+    color:#010f1c;
+    font-size:16px;
+    text-transform:uppercase;
+    font-weight:600;
+}
+.products .container .filter .categories ul{
+    margin-top:10px;
+}
+.products .container .filter .categories ul li{
+    list-style: none;
+    margin-top:20px;
+    color:#010f1c;
+    cursor:pointer;
+}
+.products .container .product-box{
+    margin-right:0%;
+ 
+}
+.products .container .product-box .contain{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products .container .product-box .contain .box{
+    padding:10px 20px;
+    overflow:hidden;
+    width:280px;
+    height:380px;
+    border:1px solid #e2e0e0;
+    margin-bottom: 20px;
+    transition:.5s;
+    cursor:pointer;
+    border-radius: 5px;
+}
+.products .container .product-box .contain .box:hover{
+    box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+}
+.products .container .product-box .contain .box .img-box{
+   display:flex;
+   justify-content:space-between;
+   border-bottom: 1px solid #e2e0e0;
+}
+.products .container .product-box .contain .box .img-box img{
+    width:300px;
+    height:250px;
+    margin-right: 50px;
+
+}
+.products .container .product-box .contain .box .img-box .icon{
+    position:relative;
+    right:0;
+    display:flex;
+    flex-direction:column;
+    z-index:1;
+    margin-top:10px;
+    transition:.5s;
+}
+.products .container .product-box .contain .box:hover .img-box .icon{
+    transform:translate(-80px)
+}
+.products .container .product-box .contain .box .img-box .icon li{
+    list-style:none;
+    padding:10px;
+    color:#010f1c;
+    cursor:pointer;
+    box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+    background:#fff;
+    transition:.5s;
+    font-size:18px;
+}
+.products .container .product-box .contain .box .img-box .icon li:hover{
+    background:#0989ff;
+    color:#fff;
+}
