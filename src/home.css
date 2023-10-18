@@ -204,3 +204,9 @@
 .product .contanier .box:hover .detail h3{
     color:#0989ff;
 }
+.product .contanier .box .detail h4{
+    color:#0989ff;
+    margin-top:5px;
+    font-size:14px;
+    letter-spacing: 1px;
+}

@@ -121,7 +121,7 @@ const Home = () => {
           {
             HomeProduct.map((product) => {
               return (
-                <>
+                <div>
                   <div className='box' key={product.id}>
                     <div className='img-box'>
                       <img src={product.Img} alt={product.Title} />
@@ -144,7 +144,7 @@ const Home = () => {
                     </div>
 
                   </div>
-                </>
+                </div>
               )
             })
           }

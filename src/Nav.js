@@ -11,7 +11,7 @@ import './nav.css';
 const Nav = () => {
     const { loginWithRedirect, logout, user, isAuthenticated, } = useAuth0()
     return (
-        <>
+        <div>
             <div className='free'>
                 <div className='icon'>
                     <FaTruckMoving />
@@ -83,7 +83,7 @@ const Nav = () => {
                 </div>
             </div>
 
-        </>
+        </div>
 
     )
 }
