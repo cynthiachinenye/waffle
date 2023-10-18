@@ -51,7 +51,7 @@ const ProductDetail = [
  
       {
          id:7,
-         Title:"Galaxy Tab s6 Lite 10.4-inch Andriod Tablet 128GB.",
+         Title:"Mini Digital Camera Cctv Wireless Small Camera For Security",
          Cat:'Camera',
          Price:'$723',
          Img:'./images/gaming (5).png'
@@ -59,10 +59,10 @@ const ProductDetail = [
  
       {
          id:8,
-         Title:"Infinix Smart 7 HD 6.6 2GB RAM/64GB ROM 4G Android 12 - White ",
-         Cat:'Infinix',
+         Title:"1.3 Mega Pixel HD DV SLR Camera, 2.4 Inch LCD, Full HD 720P Recording, EISInfinix Smart 7 HD 6.6 2GB RAM/64GB ROM 4G Android 12 - White ",
+         Cat:'Camera',
          Price:'$623',
-         Img:'./images/set (11).png'
+         Img:'./images/gaming (6).png'
       },
  
 
