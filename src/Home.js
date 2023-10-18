@@ -116,7 +116,7 @@ const Home = () => {
       </div>
 
       <div className='product'>
-      <h2>Top Products</h2>
+        <h2>Top Products</h2>
         <div className='contanier'>
           {
             HomeProduct.map((product) => {
@@ -126,12 +126,12 @@ const Home = () => {
                     <div className='img-box'>
                       <img src={product.Img} alt={product.Title} />
                       <div className='icon'>
-                      <li> <AiOutlineShoppingCart /></li>
-                      <li>  <BsEye /></li>
-                      <li> <AiOutlineHeart /></li>
-                       
-                       
-                       
+                        <li> <AiOutlineShoppingCart /></li>
+                        <li>  <BsEye /></li>
+                        <li> <AiOutlineHeart /></li>
+
+
+
 
                       </div>
                     </div>
@@ -149,6 +149,19 @@ const Home = () => {
             })
           }
 
+        </div>
+      </div>
+      <div className='banner'>
+        <div className='container'>
+          <div className='detail'>
+            <h4>LATEST TECHNOLOGY ADDED</h4>
+            <h3>Apple ipad 10.2 9th Gen -2021</h3>
+            <p>  <BsCurrencyDollar />986</p>
+            <Link to='/product'className='link'>Shop Now <BsArrowRightShort/></Link>
+          </div>
+          <div className='img-box'>
+            <img src='./images/tablet.png' alt='' />
+          </div>
         </div>
       </div>
     </div>
