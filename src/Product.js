@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProductDetail from './components/ProductDetail'
 import { BsEye } from 'react-icons/bs'
 import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai'
 import './components/product.css'
 
 const Product = () => {
+    const [product,setProduct] = useState(ProductDetail)
+    const filterProduct = (product) =>{
+        const update = ProductDetail.filter((s) =>
+        {
+            return s.Cat === product
+        })
+        setProduct(update);
+
+    }
+    const AllProducts = () =>{
+           setProduct(ProductDetail);
+    }
     return (
         <div>
 
@@ -16,18 +28,19 @@ const Product = () => {
                         <div className='categories'>
                             <h3>categories</h3>
                             <ul>
-                                <li>Tablet</li>
-                                <li>Smart watch</li>
-                                <li>Headphones</li>
-                                <li>Camera</li>
-                                <li>Gaming</li>
+                            <li onClick={() => AllProducts()}>AllProducts</li>
+                                <li onClick={() => filterProduct("Tablet")}>Tablet</li>
+                                <li onClick={() => filterProduct("Smart Watch")}>Smart watch</li>
+                                <li  onClick={() => filterProduct("Headphones")}>Headphones</li>
+                                <li  onClick={() => filterProduct("Camera")}>Camera</li>
+                                <li  onClick={() => filterProduct("Gaming")}>Gaming</li>
                             </ul>
                         </div>
                     </div>
                     <div className='product-box'>
                         <div className='contain'>
                             {
-                                ProductDetail.map((product) => {
+                                product.map((product) => {
                                     return (
                                         <div>
                                             <div className='box' key={product.id}>
