@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import './nav.css';
 
-const Nav = () => {
+const Nav = ({searchbtn}) => {
     const [search,setSearch] = useState()
     const { loginWithRedirect, logout, user, isAuthenticated, } = useAuth0()
     return (
@@ -25,7 +25,7 @@ const Nav = () => {
                     </div>
                     <div className='search-box'>
                         <input type="text" value={search} placeholder='Enter Your Products' autoComplete='off' onChange={(e)=>setSearch(e.target.value)} />
-                        <button>Search</button>
+                        <button onClick={() => searchbtn(search)}>Search</button>
                     </div>
                     <div className='icon'>
                         {
