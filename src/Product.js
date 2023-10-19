@@ -5,17 +5,16 @@ import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai'
 import './components/product.css'
 
 const Product = () => {
-    const [product,setProduct] = useState(ProductDetail)
-    const filterProduct = (product) =>{
-        const update = ProductDetail.filter((s) =>
-        {
+    const [product, setProduct] = useState(ProductDetail)
+    const filterProduct = (product) => {
+        const update = ProductDetail.filter((s) => {
             return s.Cat === product
         })
         setProduct(update);
 
     }
-    const AllProducts = () =>{
-           setProduct(ProductDetail);
+    const AllProducts = () => {
+        setProduct(ProductDetail);
     }
     return (
         <div>
@@ -28,12 +27,12 @@ const Product = () => {
                         <div className='categories'>
                             <h3>categories</h3>
                             <ul>
-                            <li onClick={() => AllProducts()}>AllProducts</li>
+                                <li onClick={() => AllProducts()}>AllProducts</li>
                                 <li onClick={() => filterProduct("Tablet")}>Tablet</li>
                                 <li onClick={() => filterProduct("Smart Watch")}>Smart watch</li>
-                                <li  onClick={() => filterProduct("Headphones")}>Headphones</li>
-                                <li  onClick={() => filterProduct("Camera")}>Camera</li>
-                                <li  onClick={() => filterProduct("Gaming")}>Gaming</li>
+                                <li onClick={() => filterProduct("Headphones")}>Headphones</li>
+                                <li onClick={() => filterProduct("Camera")}>Camera</li>
+                                <li onClick={() => filterProduct("Gaming")}>Gaming</li>
                             </ul>
                         </div>
                     </div>

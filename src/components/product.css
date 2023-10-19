@@ -45,6 +45,9 @@
     color:#010f1c;
     cursor:pointer;
 }
+.products .container .filter .categories ul li:hover{
+    color:#0989ff;
+}
 .products .container .product-box{
     margin-right:0%;
  
