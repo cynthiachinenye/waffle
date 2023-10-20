@@ -18,9 +18,12 @@ const Product = ({product, setProduct , detail,view, close, setClose}) => {
     }
     return (
         <div>
+        {
+            close ?
+        }
         <div className='product-detail'>
         <div className='container'>
-        <button onClick={}><AiOutlineClose/></button>
+        <button onClick={()=>setClose(false)}><AiOutlineClose/></button>
         {
             detail.map((product) =>{
                 return(
@@ -41,7 +44,7 @@ const Product = ({product, setProduct , detail,view, close, setClose}) => {
         }
        
         </div>
-        </div>
+        </div>: null
 
             <div className='products'>
                 <h2> # Products</h2>
