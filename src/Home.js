@@ -14,6 +14,36 @@ const Home = (detail, view, close, setClose) => {
   // const [homeProduct, setHomeProduct] = useState(HomeProduct)
   return (
     <div>
+
+    {
+      close ?
+  
+  <div className='product-detail'>
+  <div className='container'>
+  <button onClick={()=>setClose(false)} className='closebtn'><AiOutlineClose/></button>
+  {
+      detail.map((product) =>{
+          return(
+              <div className='product-box'>
+              <div className='img-box'>
+              <img src={product.Img} alt={product.Title}/>
+              </div>
+              <div className='detail'>
+              <h4>{product.Cat}</h4>
+              <h2>{product.Title}</h2>
+              <p>A Screen Everyone Will Love: Whether Your family is streaming or video chatting </p>
+              <h3>{product.Price}</h3>
+              <button>Add To Cart</button>
+              </div>
+              </div>
+          )
+      })
+  }
+ 
+  </div>
+  </div> : null
+}
+
       <div className='top-banner'>
         <div className='container'>
           <div className='detail'>
