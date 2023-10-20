@@ -20,7 +20,7 @@ const Product = ({product, setProduct , detail,view, close, setClose}) => {
         <div>
         {
             close ?
-        }
+        
         <div className='product-detail'>
         <div className='container'>
         <button onClick={()=>setClose(false)}><AiOutlineClose/></button>
@@ -44,8 +44,8 @@ const Product = ({product, setProduct , detail,view, close, setClose}) => {
         }
        
         </div>
-        </div>: null
-
+        </div> : null
+    }
             <div className='products'>
                 <h2> # Products</h2>
                 <p>Home . products</p>
