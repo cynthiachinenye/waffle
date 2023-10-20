@@ -1,10 +1,10 @@
 import React from 'react'
 import ProductDetail from './components/ProductDetail'
 import { BsEye } from 'react-icons/bs'
-import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai'
+import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineClose } from 'react-icons/ai'
 import './components/product.css'
 
-const Product = ({product, setProduct , detail,view}) => {
+const Product = ({product, setProduct , detail,view, close, setClose}) => {
     
     const filterProduct = (product) => {
         const update = ProductDetail.filter((s) => {
@@ -20,6 +20,7 @@ const Product = ({product, setProduct , detail,view}) => {
         <div>
         <div className='product-detail'>
         <div className='container'>
+        <button onClick={}><AiOutlineClose/></button>
         {
             detail.map((product) =>{
                 return(
