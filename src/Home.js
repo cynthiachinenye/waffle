@@ -5,12 +5,12 @@ import { BsArrowRightShort, BsCurrencyDollar, BsEye } from 'react-icons/bs'
 import { FiTruck } from "react-icons/fi";
 import { CiPercent } from "react-icons/ci"
 import { BiHeadphone } from 'react-icons/bi'
-import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai'
+import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineClose} from 'react-icons/ai'
 import HomeProduct from './HomeProduct';
 
 import './home.css'
 
-const Home = (detail, view, close, setClose) => {
+const Home = ({detail, view, close, setClose}) => {
   // const [homeProduct, setHomeProduct] = useState(HomeProduct)
   return (
     <div>
