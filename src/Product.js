@@ -23,7 +23,7 @@ const Product = ({product, setProduct , detail,view, close, setClose}) => {
         
         <div className='product-detail'>
         <div className='container'>
-        <button onClick={()=>setClose(false)}><AiOutlineClose/></button>
+        <button onClick={()=>setClose(false)} className='closebtn'><AiOutlineClose/></button>
         {
             detail.map((product) =>{
                 return(
