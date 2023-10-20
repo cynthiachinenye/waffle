@@ -10,7 +10,7 @@ import HomeProduct from './HomeProduct';
 
 import './home.css'
 
-const Home = () => {
+const Home = (detail, view, close, setClose) => {
   // const [homeProduct, setHomeProduct] = useState(HomeProduct)
   return (
     <div>
@@ -127,7 +127,7 @@ const Home = () => {
                       <img src={product.Img} alt={product.Title} />
                       <div className='icon'>
                         <li> <AiOutlineShoppingCart /></li>
-                        <li>  <BsEye /></li>
+                        <li onClick={()=> view (product)}>  <BsEye /></li>
                         <li> <AiOutlineHeart /></li>
 
 
