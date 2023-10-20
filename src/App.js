@@ -20,11 +20,15 @@ function App() {
     setProduct(change)
 
   }
+  const view = (product) => {
+    setDetail([{...product}])
+
+  }
   return (
     <div className="App">
      <BrowserRouter>
      <Nav searchbtn={searchbtn}/>
-     <Rout product={product} setProduct={setProduct}/>
+     <Rout product={product} setProduct={setProduct} detail={detail} view={view}/>
      <Footer/>
      </BrowserRouter>
     </div>

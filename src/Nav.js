@@ -24,7 +24,7 @@ const Nav = ({searchbtn}) => {
                         <img src='./images/logo.png' alt='logo' />
                     </div>
                     <div className='search-box'>
-                        <input type="text" value={search} placeholder='Enter Your Products' autoComplete='off' onChange={(e)=>setSearch(e.target.value)} />
+                        <input type="text" value={search} placeholder='Enter Your Products' autoComplete='off' onChange={ (e)=> setSearch(e.target.value)} />
                         <button onClick={() => searchbtn(search)}>Search</button>
                     </div>
                     <div className='icon'>

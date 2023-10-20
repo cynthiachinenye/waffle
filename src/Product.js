@@ -4,7 +4,7 @@ import { BsEye } from 'react-icons/bs'
 import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai'
 import './components/product.css'
 
-const Product = ({product, setProduct , detail}) => {
+const Product = ({product, setProduct , detail,view}) => {
     
     const filterProduct = (product) => {
         const update = ProductDetail.filter((s) => {
