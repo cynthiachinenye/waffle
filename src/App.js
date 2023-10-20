@@ -8,6 +8,9 @@ import ProductDetail from "./components/ProductDetail";
 
 
 function App() {
+  //product detail
+  const [detail, setDetail] = useState([])
+  //filter product
   const [product, setProduct] = useState(ProductDetail)
   const searchbtn = (product) => {
     const change = ProductDetail.filter((s)=>{
