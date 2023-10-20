@@ -25,7 +25,7 @@ const Product = ({product, setProduct , detail,view}) => {
                 return(
                     <div className='product-box'>
                     <div className='img-box'>
-                    <img src={product.img} alt={product.Title}/>
+                    <img src={product.Img} alt={product.Title}/>
                     </div>
                     <div className='detail'>
                     <h4>{product.Cat}</h4>
