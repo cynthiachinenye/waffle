@@ -8,6 +8,8 @@ import ProductDetail from "./components/ProductDetail";
 
 
 function App() {
+  //add to cart
+  const [cart,setCart] = useState([])
   //product detail
   const [close, setClose] = useState(false)
   const [detail, setDetail] = useState([])
@@ -26,11 +28,14 @@ function App() {
     setClose(true)
 
   }
+  const addToCart = (product) =>{
+
+  }
   return (
     <div className="App">
      <BrowserRouter>
      <Nav searchbtn={searchbtn}/>
-     <Rout product={product} setProduct={setProduct} detail={detail} view={view} close={close} setClose={setClose}/>
+     <Rout product={product} setProduct={setProduct} detail={detail} view={view} close={close} setClose={setClose} cart={cart} setCart={setCart} addToCart={addToCart} />
      <Footer/>
      </BrowserRouter>
     </div>

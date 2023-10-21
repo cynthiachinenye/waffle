@@ -4,7 +4,7 @@ import { BsEye } from 'react-icons/bs'
 import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineClose } from 'react-icons/ai'
 import './components/product.css'
 
-const Product = ({product, setProduct , detail,view, close, setClose}) => {
+const Product = ({product, setProduct , detail,view, close, setClose, addToCart}) => {
     
     const filterProduct = (product) => {
         const update = ProductDetail.filter((s) => {
@@ -73,7 +73,7 @@ const Product = ({product, setProduct , detail,view, close, setClose}) => {
                                                 <div className='img-box'>
                                                     <img src={product.Img} alt={product.Title} />
                                                     <div className='icon'>
-                                                        <li> <AiOutlineShoppingCart /></li>
+                                                        <li onClick={()=> addToCart(product)}> <AiOutlineShoppingCart /></li>
                                                         <li onClick={()=> view (product)}>  <BsEye /></li>
                                                         <li> <AiOutlineHeart /></li>
 
