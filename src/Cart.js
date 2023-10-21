@@ -28,7 +28,8 @@ const Cart = ({cart, setCart}) => {
                 <div className='detail'>
                 <h4>{product.Cat}</h4>
                 <h3>{product.Title}</h3>
-                <p>{product.Price}</p>
+                <p>Price: ${product.Price}</p>
+
                 <button><AiOutlineClose/></button>
                 </div>
                 </div>

@@ -31,6 +31,7 @@ function App() {
   //add to cart
   
   const addToCart = (product) => {
+    
     const exist = cart.find((x) => {
       return x.id === product.id
     })
