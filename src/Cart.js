@@ -1,10 +1,22 @@
 import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
+import './cart.css'
 
 const Cart = ({cart, setCart}) => {
+   
+  console.log(cart)
   return (
     <div>
     <div className='container'>
+    
+    {cart.length === 0 &&
+      <div className='empty-cart'>
+      <h2 className='empty'>Cart is Empty</h2>
+      <Link to ='/product' className='link'>Shop Now</Link>
+      </div>
+     
+    }
     <div className='contain'>
     {
         cart.map((product)=>{
