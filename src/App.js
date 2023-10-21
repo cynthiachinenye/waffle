@@ -28,8 +28,18 @@ function App() {
     setClose(true)
 
   }
+  //add to cart
+  const exist = cart.find((x) => {
+    
+  })
   const addToCart = (product) =>{
-
+       if(exist){
+        alert('This Product is already added to cart')
+       }
+       else{
+        setCart([...cart,{...product, qty:1}])
+        alert(" Product is added to cart")
+       }
   }
   return (
     <div className="App">

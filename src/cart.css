@@ -19,6 +19,7 @@
     color: #010f1c;
     text-transform: uppercase;
     font-weight: 300;
+    margin-bottom:30px;
 }
 .cart-container .empty-cart .link{
     margin-left: 70px;
