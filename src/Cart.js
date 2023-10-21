@@ -29,6 +29,10 @@ const Cart = ({cart, setCart}) => {
                 <h4>{product.Cat}</h4>
                 <h3>{product.Title}</h3>
                 <p>Price: ${product.Price}</p>
+                <div className='qty'>
+                <button className='in-qty'>+</button>
+                <h4></h4>
+                </div>
 
                 <button><AiOutlineClose/></button>
                 </div>
