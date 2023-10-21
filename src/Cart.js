@@ -31,7 +31,7 @@ const Cart = ({cart, setCart}) => {
                 <p>Price: ${product.Price}</p>
                 <div className='qty'>
                 <button className='in-qty'>+</button>
-                <h4></h4>
+                <h4>sub total: ${product.Price * product.qty}</h4>
                 </div>
 
                 <button><AiOutlineClose/></button>

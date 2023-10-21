@@ -170,7 +170,7 @@ const Home = ({detail, view, close, setClose, addToCart}) => {
 
                       <p>{product.Cat}</p>
                       <h3>{product.Title}</h3>
-                      <h4>{product.Price}</h4>
+                      <h4>${product.Price}</h4>
                     </div>
 
                   </div>

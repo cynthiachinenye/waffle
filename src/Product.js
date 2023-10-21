@@ -35,7 +35,7 @@ const Product = ({product, setProduct , detail,view, close, setClose, addToCart}
                     <h4>{product.Cat}</h4>
                     <h2>{product.Title}</h2>
                     <p>A Screen Everyone Will Love: Whether Your family is streaming or video chatting </p>
-                    <h3>{product.Price}</h3>
+                    <h3>${product.Price}</h3>
                     <button>Add To Cart</button>
                     </div>
                     </div>
@@ -87,7 +87,7 @@ const Product = ({product, setProduct , detail,view, close, setClose, addToCart}
 
                                                     <p>{product.Cat}</p>
                                                     <h3>{product.Title}</h3>
-                                                    <h4>{product.Price}</h4>
+                                                    <h4>${product.Price}</h4>
                                                 </div>
 
 
