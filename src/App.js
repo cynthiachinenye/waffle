@@ -29,11 +29,13 @@ function App() {
 
   }
   //add to cart
-  const exist = cart.find((x) => {
-    
-  })
-  const addToCart = (product) =>{
-       if(exist){
+  
+  const addToCart = (product) => {
+    const exist = cart.find((x) => {
+      return x.id === product.id
+    })
+       if(exist)
+       {
         alert('This Product is already added to cart')
        }
        else{

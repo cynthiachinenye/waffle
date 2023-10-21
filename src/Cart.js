@@ -5,15 +5,15 @@ import './cart.css'
 
 const Cart = ({cart, setCart}) => {
    
-  console.log(cart)
+  
   return (
     <div>
     <div className='cart-container'>
     
     {cart.length === 0 &&
       <div className='empty-cart'>
-      <h2 className='empty'>Cart is Empty</h2>
-      <Link to ='/product' className='link'>Shop Now</Link>
+      <h2 className='empty'> Cart is Empty</h2>
+      <Link to ='/product' className='link'> Shop Now </Link>
       </div>
      
     }
