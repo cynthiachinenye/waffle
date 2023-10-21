@@ -10,7 +10,7 @@ import HomeProduct from './HomeProduct';
 
 import './home.css'
 
-const Home = ({detail, view, close, setClose}) => {
+const Home = ({detail, view, close, setClose,addToCart}) => {
   // const [homeProduct, setHomeProduct] = useState(HomeProduct)
   return (
     <div>
