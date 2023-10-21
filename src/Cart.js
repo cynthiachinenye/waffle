@@ -8,7 +8,7 @@ const Cart = ({cart, setCart}) => {
   console.log(cart)
   return (
     <div>
-    <div className='container'>
+    <div className='cart-container'>
     
     {cart.length === 0 &&
       <div className='empty-cart'>

@@ -4,8 +4,26 @@
     box-sizing:border-box;
     font-family:'sans-serif';
 }
-.container{
+.cart-container{
     padding:40px 50px;
     width:100%;
     background:#f1f1f1;
+    border-bottom:1px solid #9a9a9a;
+}
+.cart-container .empty-cart{
+    margin-top:30px;
+    margin-left:40%;
+}
+.cart-container .empty-cart .empty{
+    font-size:32px;
+    color: #010f1c;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.cart-container .empty-cart .link{
+    margin-left: 70px;
+    text-decoration: none;
+    color:#fff;
+    padding:10px 20px;
+    background: #010f1c;
 }
