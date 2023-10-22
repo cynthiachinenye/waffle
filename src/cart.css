@@ -80,5 +80,28 @@
     margin-top:10px;
     display:flex;
 }
+.cart-container .contain .cart-item  .detail .info .qty .in-qty{
+    padding:10px;
+    background:none;
+    outline:none;
+    border:none;
+    color: #0989ff;
+    font-size:32px;
+    cursor:pointer;
+}
+.cart-container .contain .cart-item  .detail .info .qty input{
+    outline:none;
+    border:none;
+    background:none;
+    font-size:22px;
+    color:#010f1c;
+    width:50px;
+    margin-left:20px;
+}
+.cart-container .contain .cart-item  .detail .info .qty .subtotal{
+    color:#010f1c;
+    font-size:22px;
+    margin-top:10px;
+}
 
 

@@ -66,22 +66,22 @@ const Cart = ({ cart, setCart }) => {
                     <img src={product.Img} alt={product.Title} />
                   </div>
                   <div className='detail'>
-                  <div className='info'>
-                    <h4>{product.Cat}</h4>
-                    <h3>{product.Title}</h3>
-                    <p>Price: ${product.Price}</p>
-                    <div className='qty'>
-                      <button className='in-qty' onClick={() => incqty(product)}>+</button>
-                      <input type='text' value={product.qty} />
-                      <button className='in-qty' onClick={() => inc(product)}>-</button>
+                    <div className='info'>
+                      <h4>{product.Cat}</h4>
+                      <h3>{product.Title}</h3>
+                      <p>Price: ${product.Price}</p>
+                      <div className='qty'>
+                        <button className='in-qty' onClick={() => incqty(product)}>+</button>
+                        <input type='text' value={product.qty} />
+                        <button className='in-qty' onClick={() => inc(product)}>-</button>
                       </div>
-                      <h4>sub total: ${product.Price * product.qty}</h4>
+                      <h4 className='subtotal'>sub total: ${product.Price * product.qty}</h4>
 
                     </div>
                     <div className='close'>
-                    <button onClick={() => removeProduct(product)}><AiOutlineClose /></button>
+                      <button onClick={() => removeProduct(product)}><AiOutlineClose /></button>
+                    </div>
                   </div>
-                </div>
                 </div>
               )
             })
@@ -90,11 +90,11 @@ const Cart = ({ cart, setCart }) => {
         {
           cart.length > 0 &&
           <div>
-          <h2 className='totalprice'>${Totalprice} </h2>
-          <button className='checkout'>Checkout</button>
+            <h2 className='totalprice'>${Totalprice} </h2>
+            <button className='checkout'>Checkout</button>
           </div>
         }
-       
+
       </div>
 
     </div>
