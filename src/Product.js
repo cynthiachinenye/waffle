@@ -7,7 +7,7 @@ import './components/product.css'
 
 const Product = ({product, setProduct , detail,view, close, setClose, addToCart}) => {
     
-    const { loginWithRedirect, isAuthenticated, } = useAuth0()
+    const { loginWithRedirect,isAuthenticated } = useAuth0()
 
     const filterProduct = (product) => {
         const update = ProductDetail.filter((s) => {
@@ -76,7 +76,13 @@ const Product = ({product, setProduct , detail,view, close, setClose, addToCart}
                                                 <div className='img-box'>
                                                     <img src={product.Img} alt={product.Title} />
                                                     <div className='icon'>
+                                                    {
+                                                        isAuthenticated ?
                                                         <li onClick={()=> addToCart(product)}> <AiOutlineShoppingCart /></li>
+                                                        :
+                                                        <li onClick={()=>loginWithRedirect()}> <AiOutlineShoppingCart /></li>
+                                                    }
+                                                       
                                                         <li onClick={()=> view (product)}>  <BsEye /></li>
                                                         <li> <AiOutlineHeart /></li>
 
