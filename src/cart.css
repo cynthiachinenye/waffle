@@ -103,5 +103,34 @@
     font-size:22px;
     margin-top:10px;
 }
+.cart-container .contain .cart-item  .detail .close{
+    margin-top:30px;
+    margin-left:50px;
+}
+.cart-container .contain .cart-item  .detail .close button{
+    border:none;
+    outline:none;
+    font-size:22px;
+    color: #db0045;
+    background:none;
+    cursor:pointer;
+}
+.cart-container .totalprice{
+    margin-top:30px;
+    margin-left:50px;
+    font-size:22px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+.cart-container .checkout{
+    margin-top:40px;
+    margin-left:53%;
+    padding:10px 20px;
+    color:#fff;
+    border:none;
+    outline:none;
+    background:#0989ff;
+    cursor:pointer;
+}
 
 

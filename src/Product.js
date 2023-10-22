@@ -1,11 +1,14 @@
 import React from 'react'
 import ProductDetail from './components/ProductDetail'
 import { BsEye } from 'react-icons/bs'
+import { useAuth0 } from "@auth0/auth0-react";
 import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineClose } from 'react-icons/ai'
 import './components/product.css'
 
 const Product = ({product, setProduct , detail,view, close, setClose, addToCart}) => {
     
+    const { loginWithRedirect, isAuthenticated, } = useAuth0()
+
     const filterProduct = (product) => {
         const update = ProductDetail.filter((s) => {
             return s.Cat === product
