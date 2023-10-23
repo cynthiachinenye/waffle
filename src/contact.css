@@ -40,5 +40,30 @@
     outline:none;
     background:none;
     border-bottom:1px solid #010f1c;
-    width:200px;
+    width:350px;
+    margin-top:20px;
+    margin-left:35%;
+}
+.contact-container .content .form form textarea{
+    padding:10px 30px;
+    border:none;
+    outline:none;
+    background:none;
+    border-bottom:1px solid #010f1c;
+   max-width:350px;
+    margin-top:20px;
+    margin-left:35%;
+    resize:none
+
+}
+.contact-container .content .form form button{
+    margin-top:30px;
+    width:100px;
+    padding:10px 0px;
+    border:none;
+    outline:none;
+    margin-left:35%;
+    color:#fff;
+    background:#010f1c;
+
 }
