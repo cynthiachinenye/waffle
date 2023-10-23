@@ -1,8 +1,12 @@
 import React,{ useState } from 'react'
+import { useAuth0 } from "@auth0/auth0-react";
+
 import './contact.css'
 
 const Contact = () => {
-    const [user, setUser] = useState(
+    const { loginWithRedirect, logout, user, isAuthenticated, } = useAuth0()
+
+    const [users, setUser] = useState(
 
         {
             Name:'',
@@ -15,10 +19,10 @@ const Contact = () => {
     const data = (e) => {
          name= e.target.name;
          value =e.target.value;
-         setUser({...user,[name]:value})
+         setUser({...users,[name]:value})
     }
      const sendData = async(e) => {
-        const {Name, Email, Subject, Message} = user
+        const {Name, Email, Subject, Message} = users
         e.preventDefault();
         const options ={
             method:'POST',
@@ -47,11 +51,17 @@ const Contact = () => {
       <h2>#Contact Us</h2>
       <div className='form'>
       <form method='POST'>
-      <input type="text" name='Name' value={user.Name} placeholder='enter your full name' required autoComplete='off' onChange={data}/>
-      <input type="email" name='Email' value={user.Email} placeholder='enter your mail' required autoComplete='off' onChange={data}/>
-      <input type="text" name='Subject' value={user.Subject} placeholder='enter your Subject' required autoComplete='off' onChange={data}/>
-      <textarea name='Message' value={user.Message} placeholder='Your Message' required autoComplete='off' onChange={data}></textarea>
-      <button type='submit' onClick={sendData }> Send</button>
+      <input type="text" name='Name' value={users.Name} placeholder='enter your full name' required autoComplete='off' onChange={data}/>
+      <input type="email" name='Email' value={users.Email} placeholder='enter your mail' required autoComplete='off' onChange={data}/>
+      <input type="text" name='Subject' value={users.Subject} placeholder='enter your Subject' required autoComplete='off' onChange={data}/>
+      <textarea name='Message' value={users.Message} placeholder='Your Message' required autoComplete='off' onChange={data}></textarea>
+      {
+        isAuthenticated?
+        <button type='submit' onClick={sendData }> Send</button>
+        :
+        <button type='submit' onClick={() => loginWithRedirect() }> Login</button>
+      }
+   
       </form>
       </div>
       </div>

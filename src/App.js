@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Rout from "./Rout";
 import Footer from "./components/Footer";
 import ProductDetail from "./components/ProductDetail";
-
+import './index.css'
 
 
 function App() {
