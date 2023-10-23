@@ -80,7 +80,7 @@ const Product = ({product, setProduct , detail,view, close, setClose, addToCart}
                                                         isAuthenticated ?
                                                         <li onClick={()=> addToCart(product)}> <AiOutlineShoppingCart /></li>
                                                         :
-                                                        <li onClick={()=>loginWithRedirect()}> <AiOutlineShoppingCart /></li>
+                                                        <li onClick={() => loginWithRedirect()}> <AiOutlineShoppingCart /></li>
                                                     }
                                                        
                                                         <li onClick={()=> view (product)}>  <BsEye /></li>
